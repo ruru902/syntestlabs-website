@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(185, 150, 221, 0.3);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(185, 150, 221, 0.5);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b996dd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a885cc;
+}
+
+/* Smooth animations */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Focus states */
+button:focus,
+input:focus,
+a:focus {
+  outline: 2px solid #b996dd;
+  outline-offset: 2px;
+}
+
+/* Loading animation for Spline */
+.spline-loading {
+  @apply bg-gradient-to-br from-gray-800 to-gray-700 animate-pulse;
+}
