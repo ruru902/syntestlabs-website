@@ -158,7 +158,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 flex items-center justify-center">
-                <img src="syn_test_icon.png" alt="SynTest Logo" className="w-80 h-80 object-contain" />
+                <img src="syn_test_icon.png" alt="SynTest Logo" className="w-10 h-10 object-contain" />
               </div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-[#b996dd] to-[#a2e8f4] bg-clip-text text-transparent">
                 SynTest Labs
